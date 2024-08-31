@@ -32,14 +32,31 @@ body {
 /* menu */
 .menu {
     background: var(--corPrincipal);
-    padding: 5px;
     cursor: pointer;
 
     & #burger {
         display: block;
         color: white;
         text-align: center;
-        padding: 5px;
+        padding: 10px;
+    }
+
+    & #burger:hover {
+        background: var(--corCorpo);
+    }
+
+    & .sobreMim,
+    .linguagens,
+    .projetos {
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    & .sobreMim:hover,
+    .linguagens:hover,
+    .projetos:hover {
+        background: var(--corCorpo);
     }
 }
 
@@ -48,6 +65,8 @@ main {
     width: 90vw;
     background: white;
     margin: 0 auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 /* sobre mim */
@@ -81,7 +100,7 @@ main {
     color: white;
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.525);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
 
@@ -102,6 +121,7 @@ p.rodape {
     color: white;
     text-align: center;
     padding: 5px;
+    margin-top: 20px;
 
     & a {
         color: white;
