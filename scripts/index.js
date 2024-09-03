@@ -1,9 +1,9 @@
-const body = document.querySelector("body");
+const body = document.getElementById("corpo");
 const menu = document.querySelector(".menu");
 const itens = document.querySelector(".itens");
 
 body.addEventListener('onresize', () => mudarTamanho());
-menu.addEventListener('click',() => clickMenu());
+menu.addEventListener('click', () => clickMenu());
 
 function clickMenu() {
     if(itens.style.display === 'none') {

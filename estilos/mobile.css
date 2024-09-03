@@ -45,12 +45,18 @@ body {
         background: #661ef6;
     }
 
-    & .sobreMim,
-    .linguagens,
-    .projetos {
-        color: white;
+    & .sobreMim > p,
+    .linguagens > p,
+    .projetos > p {
         text-align: center;
         padding: 10px;
+    }
+
+    & .sobreMim > p > a,
+    .linguagens > p > a,
+    .projetos > p > a {
+        color: white;
+        text-decoration: none;
     }
 
     & .sobreMim:hover,
@@ -116,6 +122,11 @@ main {
 h1#tituloSobreMim {
     text-align: center;
     margin-top: 10px;
+}
+
+p.textoSobreMim {
+    text-align: center;
+    margin-top: 15px;
 }
 
 /* rodapé */

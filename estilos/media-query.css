@@ -14,26 +14,35 @@
 @media screen and (min-width: 768px) {
     /* menu */
     .menu {
-    background: var(--corPrincipal);
+    background: white;
     cursor: pointer;
 
         & #burger {
             display: none;
         }
 
-        & .sobreMim,
-        .linguagens,
-        .projetos {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 10px;
+        & .itens {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
         }
 
-        & .sobreMim:hover,
-        .linguagens:hover,
-        .projetos:hover {
-            background: #661ef6;
+        & .sobreMim > p,
+        .linguagens > p,
+        .projetos > p {
+            text-align: center;
+            padding: 10px;
+            background: var(--corPrincipal);
+            color: white;
+            margin: 0px 5px;
+            border-radius: 15px;
         }
-    }   
+
+        & .sobreMim > p:hover,
+        .linguagens > p:hover,
+        .projetos > p:hover {
+            background: white;
+            color: #4A0EBF;
+        }
+    }
 }
