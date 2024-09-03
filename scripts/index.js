@@ -1,12 +1,12 @@
 const body = document.getElementById("corpo");
-const menu = document.querySelector(".menu");
+const burger = document.getElementById("burger");
 const itens = document.querySelector(".itens");
 
 body.addEventListener('onresize', () => mudarTamanho());
-menu.addEventListener('click', () => clickMenu());
+burger.addEventListener('click', () => clickMenu());
 
 function clickMenu() {
-    if(itens.style.display === 'none') {
+    if(itens.style.display == 'none') {
         itens.style.display = 'block';
     } else {
         itens.style.display = 'none';
@@ -15,8 +15,8 @@ function clickMenu() {
 
 function mudarTamanho() {
     if(window.innerWidth >= 768) {
-        menu.style.display = 'none';
+        itens.style.display = 'none';
     } else {
-        menu.style.display = 'block';
+        itens.style.display = 'block';
     }
 }
