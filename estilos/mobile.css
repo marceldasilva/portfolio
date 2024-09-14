@@ -6,8 +6,144 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* paleta de cores */
 :root {
     --corPrincipal: #4A0EBF;
     --corSecundaria: #6160F7;
+    --terceiraCor: #8858E8;
     --corTitulo: #3D2867;
+    --corBotao: #472E7A;
+}
+
+/* logo */
+div.containerLogo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+img.logo {
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px 0px;
+}
+
+/* menu hamburguer */
+span#burger {
+    display: block;
+    text-align: center;
+    background: var(--corPrincipal);
+    color: white;
+    margin-top: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burger:hover {
+    background: var(--corSecundaria);
+    transition: 1s;
+}
+
+/* itens */
+menu.itens {
+    display: block;
+    background: var(--corPrincipal);
+    font-weight: bold;
+}
+
+ul > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul > li > a:hover {
+    background: var(--corSecundaria);
+    transition: 1s;
+}
+
+/* principal */
+main {
+    width: 90vw;
+    background: white;
+    margin: 0 auto;
+}
+
+article {
+    text-align: center;
+}
+
+/* imagem formatura */
+img#imgFormatura {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* localizacao e email */
+div.containerLocalizacao {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.containerEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+img#localizacao,
+img#email {
+    width: 25px;
+    margin-right: 5px;
+}
+
+/* botao */
+button#botaoContato {
+    background: var(--corBotao);
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.46);
+    cursor: pointer;
+}
+
+button#botaoContato:hover {
+    background: var(--terceiraCor);
+    padding: 15px 30px;
+    font-size: 1em;
+    transition: .5s ease-in;
+}
+
+a#linkContato {
+    color: white;
+    text-decoration: none;
+}
+
+h1#tituloSobreMim {
+    color: var(--corPrincipal);
+    margin-bottom: 10px;
+}
+
+p.textoSobreMim {
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 25px;
+}
+
+aside > a > img {
+    width: 60px;
+    margin: 15px 10px;
+}
+
+footer {
+    background: black;
 }
