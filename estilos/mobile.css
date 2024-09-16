@@ -144,6 +144,10 @@ strong {
     color: var(--corSecundaria);
 }
 
+strong.bolderProjeto {
+    color: black;
+}
+
 aside > a > img {
     width: 60px;
     margin: 15px 10px;
@@ -156,7 +160,7 @@ h2 {
 }
 
 div.linguagens > img {
-    width: 100px;
+    width: 70px;
     margin-top: 20px;
 }
 
@@ -166,7 +170,7 @@ div.interesses > img {
     margin: 10px 5px;
 }
 
-/* Projetos */
+/* projetos */
 section {
     display: flex;
     flex-flow: column nowrap;
@@ -189,6 +193,11 @@ div.containerProjetos > a > img:hover {
     transition: .5s;
 }
 
+p.textoProjetos {
+    text-align: justify;
+}
+
+/* rodape */
 footer {
     background: black;
     padding: 5px;
