@@ -68,7 +68,6 @@ ul > li > a:hover {
 /* principal */
 main {
     width: 90vw;
-    background: white;
     margin: 0 auto;
 }
 
@@ -153,6 +152,7 @@ aside > a > img {
 /* linguagens que programo */
 h2 {
     color: var(--corPrincipal);
+    margin-bottom: 20px;
 }
 
 div.linguagens > img {
@@ -167,15 +167,32 @@ div.interesses > img {
 }
 
 /* Projetos */
-section > img {
+section {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.containerProjetos {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.containerProjetos > a > img {
     width: 300px;
     margin: 10px 0px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.469);
+}
+
+div.containerProjetos > a > img:hover {
+    opacity: .5;
+    transition: .5s;
 }
 
 footer {
     background: black;
     padding: 5px;
+    margin-top: 50px;
 }
 
 footer > p {
